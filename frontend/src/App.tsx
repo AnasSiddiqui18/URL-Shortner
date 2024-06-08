@@ -12,7 +12,7 @@ const App = () => {
 
     try {
       const response = await axios.post(
-        `https://url-shortner-brown-five.vercel.app/`,
+        `https://22a.vercel.app/`,
         {
           originalUrl: Url,
         }
