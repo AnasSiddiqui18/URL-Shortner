@@ -19,7 +19,7 @@ const generateShortUrl = asyncHandler(async (req, res) => {
     throw new ApiError(400, "error while creating the document in DB");
   }
 
-  const baseUrl = `https://url-shortner-brown-five.vercel.app/${nanoId}`;
+  const baseUrl = `https://22a.vercel.app/${nanoId}`;
 
   return res
     .status(200)
