@@ -1,4 +1,4 @@
-# URL Shortener Application
+# URL Shortener Application 🔗
 
 Welcome to the URL Shortener Application! This application allows users to generate short URLs from their original URLs.
 
