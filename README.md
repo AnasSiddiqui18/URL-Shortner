@@ -25,5 +25,10 @@ To use the URL Shortener Application:
 We are continuously working on improving the URL Shortener Application. Some planned enhancements include:
 - Integration with analytics to track URL usage.
 
+## Deployment
+
+- **Frontend**: [Frontend URL](https://url-shortner-izg9.vercel.app/)
+- **Backend**: [Backend URL](https://url-shortner-brown-five.vercel.app/) (For API access)
+
 Feel free to contribute to the project or suggest new features!
 
