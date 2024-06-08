@@ -11,11 +11,11 @@ This application provides a simple and convenient way to shorten long URLs into 
 - Easily generate short URLs from long, cumbersome ones.
 - Navigate to the generated short URLs with ease.
 - Copy generated URLs directly to your clipboard for quick sharing.
-  
 
 ## Usage
 
 To use the URL Shortener Application:
+
 1. Input your original URL into the provided field.
 2. Click the "Generate" button to create a shortened URL.
 3. Copy the generated short URL and use it as needed.
@@ -23,12 +23,12 @@ To use the URL Shortener Application:
 ## Future Enhancements
 
 We are continuously working on improving the URL Shortener Application. Some planned enhancements include:
+
 - Integration with analytics to track URL usage.
 
 ## Deployment
 
 - **Frontend**: [Frontend URL](https://url-shortner-izg9.vercel.app/)
-- **Backend**: [Backend URL](https://url-shortner-brown-five.vercel.app/) (For API access)
+- **Backend**: [Backend URL](https://22a.vercel.app/) (For API access)
 
 Feel free to contribute to the project or suggest new features!
-
