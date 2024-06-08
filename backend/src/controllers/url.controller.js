@@ -6,13 +6,30 @@ import { ApiResponse } from "../utils/ApiResponse.js";
 
 const generateShortUrl = asyncHandler(async (req, res) => {
   const { originalUrl } = req.body;
-  console.log(originalUrl);
+
+  console.log("original url", originalUrl);
+
+  if (!originalUrl) {
+    throw new ApiError(400, "url is required");
+  }
+
+  let UrlWithProtocol = originalUrl;
+
+  if (
+    !originalUrl.startsWith("http://") &&
+    !originalUrl.startsWith("https://")
+  ) {
+    UrlWithProtocol = `https://${originalUrl}`;
+  }
+
+  console.log("processed url", UrlWithProtocol);
+
   const nanoId = nanoid(4);
   if (!nanoId) {
     throw new ApiError(400, "issue while generating unique ID");
   }
   const storeUrlInDB = await Url.create({
-    originalUrl,
+    originalUrl: UrlWithProtocol,
     shortCode: nanoId,
   });
   if (!storeUrlInDB) {
