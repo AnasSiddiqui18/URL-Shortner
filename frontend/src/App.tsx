@@ -11,9 +11,12 @@ const App = () => {
     console.log("original url", Url);
 
     try {
-      const response = await axios.post(`https://sht90.vercel.app/`, {
-        originalUrl: Url,
-      });
+      const response = await axios.post(
+        `https://url-shortner-brown-five.vercel.app/`,
+        {
+          originalUrl: Url,
+        }
+      );
 
       console.log("response", response?.data?.data);
 
